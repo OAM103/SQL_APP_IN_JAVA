@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ClientHomePage">
+    <AnchorPane fx:id="Pane" layoutX="-6.0" layoutY="163.0" prefHeight="437.0" prefWidth="906.0" style="-fx-background-color: fafafa;">
+        <Button fx:id="SingUpButton" layoutX="374.0" layoutY="360.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="184.0" style="-fx-background-color: #f27806;" text="Записаться" textFill="WHITE">
+            <font>
+                <Font name="Nunito Black Italic" size="25.0" />
+            </font>
+        </Button>
+        <Label layoutX="51.0" layoutY="10.0" text="Личные данные" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="329.0" layoutY="7.0" text="Транспортное средство" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="Name_label" layoutX="51.0" layoutY="38.0" text="Имя" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="Surname_label" layoutX="49.0" layoutY="55.0" text="Фамилия" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="Telephone_label" layoutX="49.0" layoutY="72.0" text="Телефон" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="Address_label" layoutX="51.0" layoutY="89.0" text="Адрес" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="Number_label" layoutX="331.0" layoutY="35.0" text="Номер" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="Model_label" layoutX="329.0" layoutY="55.0" text="Модель" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="Color_label" layoutX="466.0" layoutY="35.0" text="Цвет" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="Year_label" layoutX="466.0" layoutY="55.0" text="Год" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="49.0" layoutY="112.0" text="Дата следующего ТО" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="Data_TO" layoutX="51.0" layoutY="148.0" text="Информация отсутствует" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font>
+        </Label>
+        <TableView fx:id="REG_TAB" layoutX="28.0" layoutY="174.0" prefHeight="180.0" prefWidth="842.0">
+            <columns>
+                <TableColumn fx:id="Number_col1" prefWidth="24.0" />
+                <TableColumn fx:id="Master_col" prefWidth="147.0" text="Мастер" />
+                <TableColumn fx:id="Telephone_col" prefWidth="134.0" text="Телефон" />
+                <TableColumn fx:id="Data_reg_col" prefWidth="107.0" text="Дата записи" />
+                <TableColumn fx:id="Data_end_col" minWidth="0.0" prefWidth="134.0" text="Дата завершения" />
+                <TableColumn fx:id="Work_col" minWidth="0.0" prefWidth="186.0" text="Работа" />
+                <TableColumn fx:id="Price_col" minWidth="0.0" prefWidth="109.0" text="Цена" />
+            </columns>
+        </TableView>
+        <Label layoutX="617.0" layoutY="10.0" text="Рекомендации" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="Recommendation_label" layoutX="617.0" layoutY="38.0" text="Информация отсутствует" textFill="#2e3348">
+            <font>
+                <Font name="Calibri" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="Search_field" layoutX="495.0" layoutY="132.0" prefHeight="32.0" prefWidth="206.0" promptText="Что-то ищете?" style="-fx-background-color: fafafa; -fx-border-color: silver; -fx-border-radius: 10;">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <ChoiceBox fx:id="SearchBox" layoutX="714.0" layoutY="136.0" prefHeight="25.0" prefWidth="153.0" />
+    </AnchorPane>
+    <Label layoutX="389.0" layoutY="14.0" text="CTO" textFill="WHITE">
+        <font>
+            <Font name="Bungee Inline" size="74.0" />
+        </font>
+    </Label>
+    <Label layoutX="114.0" layoutY="104.0" text="Станция Технического Обслуживания Автомобилей" textFill="#f4f2ff">
+        <font>
+            <Font name="Nunito Black Italic" size="27.0" />
+        </font>
+    </Label>
+    <Button fx:id="MainButton" layoutX="685.0" layoutY="36.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" style="-fx-background-color: #f27806;" text="На главную" textFill="WHITE">
+        <font>
+            <Font name="Nunito Black Italic" size="25.0" />
+        </font>
+    </Button>
+</AnchorPane>
